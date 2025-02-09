@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import HeaderBox from '@/components/HeaderBox'
-
+import TotalBalanceBox from '@/components/TotalBalanceBox'
 
 const Home = () => {
     const loggedIn = {firstname : "John", lastname : "Doe"}
@@ -18,7 +18,11 @@ const Home = () => {
             />
         </header>
 
-        
+        <TotalBalanceBox
+            accounts={[]}
+            totalBanks={1}
+            totalCurrentBalance={0}
+        />
       </div>
     </section>
   )
